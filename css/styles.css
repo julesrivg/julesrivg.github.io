@@ -1,0 +1,594 @@
+/* Desarrollo Web Básico
+ * Proyecto Final - Landing Page Personal
+ * Rivera García Julio Roberto
+ */
+@import url('https://fonts.google.com/specimen/Poppins?query=poppins');
+@import url('https://fonts.google.com/specimen/Questrial?preview.text=Hola%20gh&preview.text_type=custom&query=que');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(31, 31, 34);
+}
+
+/* clases para textos */
+.encabezado-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(132, 204, 22);
+}
+
+.encabezado-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.titulo-secundario {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(161, 161, 170);
+}
+
+/******************** Navbar ********************/
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    padding: 0 40px;
+    background-color: rgb(31, 31, 34);
+}
+
+/* Logo esquina sup izq. */
+.nav-logo {
+    display: inline-block;
+    width: 160px;
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 75px;
+    color: rgb(132, 204, 22);
+}
+
+.nav-logo:hover {
+    color: whitesmoke;
+}
+
+/* Lista de botones */
+.nav-menu {
+    float: right;
+    height: 100%;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+    height: 100%;
+    margin-left: 10px;
+}
+
+/* Botones del menú */
+.nav-menu li a {
+    position: relative;
+    top: calc(50% - 16px);
+    padding: 8px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(161, 161, 170);
+}
+
+.nav-menu li a:hover {
+    color: whitesmoke;
+}
+
+/* Label para simular botón del menú */
+.nav-check-btn {
+    float: right;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+}
+
+/* Checkbox para simular botón del menú */
+#nav-check {
+    display: none;
+}
+
+/******************** Sección principal (main) ********************/
+main {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 30px 40px;
+    background-image: url('../resources/img/fondo-2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.main-titulo {
+    position: absolute;
+    width: 520px;
+    top: calc(50% - 155px);
+    left: 11.5%;
+
+    /* border: 1px solid fuchsia; */
+}
+
+.main-titulo h1 {
+    height: 110px;
+    margin-bottom: 10px;
+    font-size: 85px;
+
+    /* border: 1px solid greenyellow; */
+}
+
+.main-titulo p {
+    height: 40px;
+    margin-bottom: 100px;
+    font-size: 28px;
+
+    /* border: 1px solid orange; */
+}
+
+.main-socials {
+    width: 100%;
+    height: 50px;
+
+    /* border: 1px solid blueviolet; */
+}
+
+.main-socials a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    font-size: 35px;
+    text-align: center;
+    color: whitesmoke;
+
+    /* border: 1px solid crimson; */
+}
+
+.main-socials a:hover {
+    color: rgb(132, 204, 22);
+}
+
+.main-socials a i {
+    position: relative;
+    top: 5px;
+}
+
+#img-perfil {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    top: calc(50% - 260px);
+    right: 11.5%;
+    border-radius: 50%;
+    border: 8px solid rgb(31, 31, 34);
+}
+
+/******************** Resume ********************/
+#sec-resume {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 30px 40px;
+    background-color: rgb(31, 31, 34);
+}
+
+.resume-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    /* Sólo porque no se me están centrando
+     * verticalmente las cards con
+     * posicionamiento de cajas
+     */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+
+    /* border: 1px solid red; */
+}
+
+.card {
+    display: inline-block;
+    width: 425px;
+    margin: 15px 20px;
+    padding: 25px;
+}
+
+.titulo-card {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.descripcion h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descripcion h4 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgb(132, 204, 22);
+}
+
+.descripcion p {
+    font-size: 15px;
+}
+
+/* Sección "Lo que hago" */
+.subcard-servicio {
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: rgb(39, 39, 42);
+    border-radius: 20px;
+}
+
+.icono-servicio {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(132, 204, 22);
+}
+
+/* Sección de habilidades */
+.subcard-skill {
+    display: inline-block;
+    width: 140px;
+    margin: 0 5px 15px 5px;
+    padding: 20px;
+    background-color: rgb(39, 39, 42);
+    border-radius: 20px;
+}
+
+.icono-skill {
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: rgb(132, 204, 22);
+}
+
+.nombre-skill {
+    font-size: 15px;
+}
+
+/* Sección experiencia */
+.subcard-exp {
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: rgb(39, 39, 42);
+    border-radius: 20px;
+}
+
+/******************** Contacto ********************/
+#sec-contact {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 30px 40px;
+    background-color: rgb(39, 39, 42);
+}
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+/* Título */
+.contact-container h2 {
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-container h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+/* Contenido */
+.form-contacto {
+    display: inline-block;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgb(31, 31, 34);
+}
+
+.fieldset-1 {
+    margin-bottom: 15px;
+}
+
+.fieldset-1, .fieldset-2 {
+    border: none;
+}
+
+.mi-input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(39, 39, 42);
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: rgb(39, 39, 42);
+}
+
+.mi-input::placeholder {
+    color: rgb(161, 161, 170);
+}
+
+.mi-input:hover {
+    border: 1px solid whitesmoke;
+}
+
+.mi-input:focus {
+    outline: none;
+    border: 1px solid rgb(132, 204, 22);
+}
+
+.row-input {
+    display: inline-block;
+    position: relative;
+    width: 268px;
+}
+
+#nombre {
+    margin-right: 10px;
+}
+
+#asunto {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#mensaje {
+    width: 100%;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#btn-enviar {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(132, 204, 22);
+}
+
+/******************** Footer ********************/
+#footer {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    padding: 30px 40px;
+    background-color: rgb(31, 31, 34);
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+
+#footer-copy {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    left: -100px;
+    font-size: 12px;
+}
+
+#footer-logo {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    left: calc(50% - 50px);
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#footer-socials {
+    float: right;
+    font-size: 20px;
+    text-align: right;
+}
+
+#footer-socials a {
+    display: inline-block;
+    width: 30px;
+    margin-left: 10px;
+    padding: 2px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#footer-socials a:hover {
+    color: rgb(132, 204, 22);
+}
+
+/* Versión móvil */
+@media only screen and (max-width: 1440px) {
+    /******************** Main ********************/
+    .main-titulo {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 57%;
+        text-align: center;
+    }
+
+    .main-titulo h1 {
+        display: block;
+        height: auto;
+        margin-bottom: 5px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .main-titulo p {
+        display: block;
+        height: auto;
+        margin-bottom: 35px;
+        font-size: 20px;
+    }
+
+    .main-socials {
+        height: 40px;
+        text-align: center;
+    }
+
+    .main-socials a {
+        width: 40px;
+        height: 40px;
+        margin: 0 8px;
+        font-size: 26px;
+    }
+
+    #img-perfil {
+        position: absolute;
+        width: 275px;
+        height: 275px;
+        top: calc(28% - 275px / 2);
+        right: calc(50% - 275px / 2);
+        border: 6px solid rgb(31, 31, 34);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /******************** Navbar ********************/
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav-check-btn {
+        display: inline-block;
+        height: 100%;
+        width: 80px;
+        padding: 25px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 240px;
+        background-color: rgb(31, 31, 34);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        height: 50px;
+        margin: 15px 0;
+    }
+
+    .nav-menu li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    #nav-check:checked ~ .nav-menu {
+        left: 0;
+    }
+
+    /******************** Main ********************/
+    main {
+        padding: 15px 20px;
+    }
+
+    /******************** Resume ********************/
+    #sec-resume {
+        padding: 15px 20px;
+    }
+
+    /******************** Contacto ********************/
+    #sec-contact {
+        padding: 15px 20px;
+    }
+
+    .fieldset-1 input {
+        width: 100%;
+    }
+
+    .fieldset-1 #nombre {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    /******************** Footer ********************/
+    #footer {
+        padding: 15px 20px;
+    }
+
+    #footer-logo {
+        left: calc(50% - 50px);
+        margin-bottom: 10px;
+    }
+
+    #footer-socials {
+        margin-bottom: 10px;
+        float: none;
+        text-align: center;
+    }
+
+    #footer-copy {
+        position: relative;
+        left: calc(50% - 100px);
+        text-align: center;
+    }
+}

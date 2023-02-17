@@ -1,0 +1,281 @@
+<!--
+    Desarrollo Web Básico
+    Proyecto Final - Landing Page Personal
+    Rivera García Julio Roberto
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Proyecto Final - Landing Page</title>
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="nav-check-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="#inicio" class="nav-logo encabezado-1">julesrivg</a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <a name="inicio"></a>
+
+    <main>
+        <div class="main-container">
+            <div class="main-titulo">
+                <h1 class="encabezado-1">Julio Rivera</h1>
+                <p class="titulo-secundario">.NET, Front-End & Game Developer</p>
+
+                <div class="main-socials">
+                    <a href="https://github.com/julesrivg" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/julio-rivera/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/JulesRivG" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/julesrivg/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <img src="./resources/img/profile mini 2.jpg" alt="Profile" id="img-perfil">
+        </div>
+    </main>
+
+    <!-- Resume -->
+    <a name="resume"></a>
+
+    <section id="sec-resume">
+        <div class="resume-container">
+            <!-- Lo que hago -->
+            <div class="card">
+                <h2 class="titulo-card encabezado-2">Lo que hago</h2>
+
+                <div class="subcard-servicio">
+                    <div class="icono-servicio">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="descripcion">
+                        <h3 class="titulo-secundario">Desarrollo con .NET</h3>
+                        <p class="texto">
+                            Desarrollo de aplicaciones Web con tecnologías de .NET: MVC,
+                            Entity Framework, Razor Pages.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="subcard-servicio">
+                    <div class="icono-servicio">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="descripcion">
+                        <h3 class="titulo-secundario">Desarrollo Front-End</h3>
+                        <p class="texto">
+                            Desarrollo Front-End con HTML 5, CSS 3 y Bootstrap.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="subcard-servicio">
+                    <div class="icono-servicio">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div class="descripcion">
+                        <h3 class="titulo-secundario">Game Development</h3>
+                        <p class="texto">
+                            Programación de videojuegos y aplicaciones con Unity 3D.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades -->
+            <div class="card">
+                <h2 class="titulo-card encabezado-2">Mis habilidades</h2>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">C#</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">SQL Server</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">.NET</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">HTML 5</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">CSS 3</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-brands fa-angular"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">Angular</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-brands fa-unity"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">Unity</h3>
+                    </div>
+                </div>
+
+                <div class="subcard-skill">
+                    <div class="icono-skill">
+                        <i class="fa-solid fa-vr-cardboard"></i>
+                    </div>
+                    <div class="nombre-skill">
+                        <h3 class="titulo-secundario">Vuforia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiencia -->
+            <div class="card">
+                <h2 class="titulo-card encabezado-2">Resume</h2>
+
+                <div class="subcard-exp">
+                    <div class="descripcion">
+                        <h3 class="titulo-secundario">Programador .NET Jr</h3>
+                        <h4 class="texto">Soc Asesores | 2018 - 2022</h4>
+                        <p class="texto">
+                            Desarrollé características y corregí errores en aplicaciones web 
+                            y APIs basadas en .NET. Coordiné actualizaciones en pruebas y 
+                            producción.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="subcard-exp">
+                    <div class="descripcion">
+                        <h3 class="titulo-secundario">Servicio Social</h3>
+                        <h4 class="texto">Facultad de Ingeniería, UNAM | 2016 - 2017</h4>
+                        <p class="texto">
+                            Colaboré en el desarrollo de un prototipo de juego de realidad
+                            virtual controlado por una bicicleta estática adaptada.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="subcard-exp">
+                    <div class="descripcion">
+                        <h3 class="titulo-secundario">Ingeniería en Computación</h3>
+                        <h4 class="texto">Facultad de Ingeniería, UNAM | 2011 - 2018</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <a name="contacto"></a>
+
+    <section id="sec-contact">
+        <div class="contact-container">
+            <h2 class="encabezado-2">Contáctame</h2>
+            <h4 class="texto">Envía un mensaje y trabajemos juntos.</h4>
+            
+            <form action="" class="form-contacto">
+                <fieldset class="fieldset-1">
+                    <input type="text" id="nombre" name="nombre" class="row-input mi-input" placeholder="Nombre">
+                    <input type="text" id="email" name="email" class="row-input mi-input" placeholder="Email">
+                </fieldset>
+
+                <fieldset class="fieldset-2">
+                    <input type="text" id="asunto" name="asunto" class="mi-input" placeholder="Asunto">
+                    <textarea id="mensaje" name="mensaje" rows="10" class="mi-input" placeholder="Tu mensaje"></textarea>
+                </fieldset>
+
+                <div class="form-boton">
+                    <input type="submit" name="enviar" id="btn-enviar" class="titulo-secundario" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <a href="#inicio" id="footer-logo" class="encabezado-1">julesrivg</a>
+    
+            <div id="footer-socials">
+                <a href="https://github.com/julesrivg" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/julio-rivera/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+    
+                <a href="https://twitter.com/JulesRivG" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/julesrivg/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <span id="footer-copy" class="texto">
+                Copyright <i class="fa-regular fa-copyright"></i> 2023 Julio Rivera.
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
